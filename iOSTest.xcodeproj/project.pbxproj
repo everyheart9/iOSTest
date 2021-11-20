@@ -17,6 +17,10 @@
 		18A1E1F3274890F40057B51A /* iOSTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A1E1F2274890F40057B51A /* iOSTestTests.m */; };
 		18A1E1FD274890F40057B51A /* iOSTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A1E1FC274890F40057B51A /* iOSTestUITests.m */; };
 		18A1E1FF274890F40057B51A /* iOSTestUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A1E1FE274890F40057B51A /* iOSTestUITestsLaunchTests.m */; };
+		18A1E212274892EE0057B51A /* WYHomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A1E211274892EE0057B51A /* WYHomePageVC.m */; };
+		18A1E216274893340057B51A /* WYSonPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A1E215274893340057B51A /* WYSonPageVC.m */; };
+		18A1E21C274893470057B51A /* WYNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A1E21A274893460057B51A /* WYNavigationViewController.m */; };
+		18A1E21D274893470057B51A /* WYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A1E21B274893460057B51A /* WYTabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,14 @@
 		18A1E1F8274890F40057B51A /* iOSTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A1E1FC274890F40057B51A /* iOSTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSTestUITests.m; sourceTree = "<group>"; };
 		18A1E1FE274890F40057B51A /* iOSTestUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSTestUITestsLaunchTests.m; sourceTree = "<group>"; };
+		18A1E210274892EE0057B51A /* WYHomePageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYHomePageVC.h; sourceTree = "<group>"; };
+		18A1E211274892EE0057B51A /* WYHomePageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYHomePageVC.m; sourceTree = "<group>"; };
+		18A1E214274893340057B51A /* WYSonPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYSonPageVC.h; sourceTree = "<group>"; };
+		18A1E215274893340057B51A /* WYSonPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYSonPageVC.m; sourceTree = "<group>"; };
+		18A1E218274893460057B51A /* WYNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYNavigationViewController.h; sourceTree = "<group>"; };
+		18A1E219274893460057B51A /* WYTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYTabBarViewController.h; sourceTree = "<group>"; };
+		18A1E21A274893460057B51A /* WYNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNavigationViewController.m; sourceTree = "<group>"; };
+		18A1E21B274893460057B51A /* WYTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYTabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,17 +116,11 @@
 		18A1E1D5274890EF0057B51A /* iOSTest */ = {
 			isa = PBXGroup;
 			children = (
-				18A1E1D6274890EF0057B51A /* AppDelegate.h */,
-				18A1E1D7274890EF0057B51A /* AppDelegate.m */,
-				18A1E1D9274890EF0057B51A /* SceneDelegate.h */,
-				18A1E1DA274890EF0057B51A /* SceneDelegate.m */,
-				18A1E1DC274890EF0057B51A /* ViewController.h */,
-				18A1E1DD274890EF0057B51A /* ViewController.m */,
-				18A1E1DF274890EF0057B51A /* Main.storyboard */,
-				18A1E1E2274890F30057B51A /* Assets.xcassets */,
-				18A1E1E4274890F30057B51A /* LaunchScreen.storyboard */,
+				18A1E20D2748925F0057B51A /* Collect */,
+				18A1E20C274892410057B51A /* Home */,
+				18A1E217274893460057B51A /* Basic */,
+				18A1E20B274890FF0057B51A /* Main */,
 				18A1E1E7274890F30057B51A /* Info.plist */,
-				18A1E1E8274890F30057B51A /* main.m */,
 			);
 			path = iOSTest;
 			sourceTree = "<group>";
@@ -134,6 +140,68 @@
 				18A1E1FE274890F40057B51A /* iOSTestUITestsLaunchTests.m */,
 			);
 			path = iOSTestUITests;
+			sourceTree = "<group>";
+		};
+		18A1E20B274890FF0057B51A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				18A1E1D6274890EF0057B51A /* AppDelegate.h */,
+				18A1E1D7274890EF0057B51A /* AppDelegate.m */,
+				18A1E1D9274890EF0057B51A /* SceneDelegate.h */,
+				18A1E1DA274890EF0057B51A /* SceneDelegate.m */,
+				18A1E1DC274890EF0057B51A /* ViewController.h */,
+				18A1E1DD274890EF0057B51A /* ViewController.m */,
+				18A1E1DF274890EF0057B51A /* Main.storyboard */,
+				18A1E1E2274890F30057B51A /* Assets.xcassets */,
+				18A1E1E4274890F30057B51A /* LaunchScreen.storyboard */,
+				18A1E1E8274890F30057B51A /* main.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		18A1E20C274892410057B51A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				18A1E20E274892760057B51A /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		18A1E20D2748925F0057B51A /* Collect */ = {
+			isa = PBXGroup;
+			children = (
+				18A1E20F274892820057B51A /* Controller */,
+			);
+			path = Collect;
+			sourceTree = "<group>";
+		};
+		18A1E20E274892760057B51A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18A1E210274892EE0057B51A /* WYHomePageVC.h */,
+				18A1E211274892EE0057B51A /* WYHomePageVC.m */,
+				18A1E214274893340057B51A /* WYSonPageVC.h */,
+				18A1E215274893340057B51A /* WYSonPageVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18A1E20F274892820057B51A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18A1E217274893460057B51A /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				18A1E218274893460057B51A /* WYNavigationViewController.h */,
+				18A1E219274893460057B51A /* WYTabBarViewController.h */,
+				18A1E21A274893460057B51A /* WYNavigationViewController.m */,
+				18A1E21B274893460057B51A /* WYTabBarViewController.m */,
+			);
+			path = Basic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +267,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = WY;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					18A1E1D2274890EF0057B51A = {
@@ -266,9 +335,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A1E21C274893470057B51A /* WYNavigationViewController.m in Sources */,
 				18A1E1DE274890EF0057B51A /* ViewController.m in Sources */,
+				18A1E212274892EE0057B51A /* WYHomePageVC.m in Sources */,
+				18A1E216274893340057B51A /* WYSonPageVC.m in Sources */,
 				18A1E1D8274890EF0057B51A /* AppDelegate.m in Sources */,
 				18A1E1E9274890F30057B51A /* main.m in Sources */,
+				18A1E21D274893470057B51A /* WYTabBarViewController.m in Sources */,
 				18A1E1DB274890EF0057B51A /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
