@@ -8,6 +8,7 @@
 #import "WYSonPageVC.h"
 
 @interface WYSonPageVC ()
+@property (weak, nonatomic) IBOutlet UILabel *titleLb;
 
 @end
 
@@ -16,6 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+- (IBAction)backClick:(UIBarButtonItem *)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)setValueStr:(NSString *)valueStr {
+    if (!valueStr) {
+        return;
+    }
+    self.valueStr = valueStr;
+    self.titleLb.text = self.valueStr;
 }
 
 /*

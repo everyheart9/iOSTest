@@ -6,6 +6,7 @@
 //
 
 #import "WYHomePageVC.h"
+#import "WYSonPageVC.h"
 
 @interface WYHomePageVC ()
 
@@ -16,6 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+//    if ([segue.identifier isEqualToString:@"homeSegue"]) {
+//        WYSonPageVC *sonVC = segue.sourceViewController;
+//        sonVC.valueStr = @"test";
+//    }
+//    UIViewController *vc = segue.sourceViewController;
+
 }
 
 /*
