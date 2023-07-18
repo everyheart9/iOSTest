@@ -20,6 +20,7 @@
 		18A1E216274893340057B51A /* WYSonPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A1E215274893340057B51A /* WYSonPageVC.m */; };
 		18A1E21C274893470057B51A /* WYNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A1E21A274893460057B51A /* WYNavigationViewController.m */; };
 		18A1E21D274893470057B51A /* WYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A1E21B274893460057B51A /* WYTabBarViewController.m */; };
+		18FC40DB2A66BC6E00D8ABF1 /* TitleImageNumber in Resources */ = {isa = PBXBuildFile; fileRef = 18FC40DA2A66BC6E00D8ABF1 /* TitleImageNumber */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		18A1E219274893460057B51A /* WYTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYTabBarViewController.h; sourceTree = "<group>"; };
 		18A1E21A274893460057B51A /* WYNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNavigationViewController.m; sourceTree = "<group>"; };
 		18A1E21B274893460057B51A /* WYTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYTabBarViewController.m; sourceTree = "<group>"; };
+		18FC40DA2A66BC6E00D8ABF1 /* TitleImageNumber */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TitleImageNumber; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		18A1E1D5274890EF0057B51A /* iOSTest */ = {
 			isa = PBXGroup;
 			children = (
+				18FC40CF2A66BB4D00D8ABF1 /* Function */,
 				18A1E20D2748925F0057B51A /* Collect */,
 				18A1E20C274892410057B51A /* Home */,
 				18A1E217274893460057B51A /* Basic */,
@@ -197,6 +200,14 @@
 				18A1E21A274893460057B51A /* WYNavigationViewController.m */,
 			);
 			path = Basic;
+			sourceTree = "<group>";
+		};
+		18FC40CF2A66BB4D00D8ABF1 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				18FC40DA2A66BC6E00D8ABF1 /* TitleImageNumber */,
+			);
+			path = Function;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +316,7 @@
 			files = (
 				18A1E1E6274890F30057B51A /* LaunchScreen.storyboard in Resources */,
 				18A1E1E3274890F30057B51A /* Assets.xcassets in Resources */,
+				18FC40DB2A66BC6E00D8ABF1 /* TitleImageNumber in Resources */,
 				18A1E1E1274890EF0057B51A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
